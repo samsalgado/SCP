@@ -1,0 +1,41 @@
+
+  
+  input{
+  width:110px;
+  height:auto-fit;
+  justify-self:end;
+  display:inline-block;
+  }
+  td, th{
+  width:1px;
+  height:2px;
+  justify-self: auto;
+  }
+  #row{
+    background-color: white;
+    width:300px;
+    margin-left: 25px;
+    margin-right: initial;
+    height:350px;
+  }
+  h{
+    color:black;
+    font-size: large;
+    text-align: center;
+    float:inline-start;
+  }
+  h1{
+    color:white;
+    text-align:center;
+  }
+  h2{
+    color:white;
+    margin: 100px;
+    text-align: center;
+  }
+  table, tr, th{
+    color:white;
+    float:center;
+  }
+  
+  
