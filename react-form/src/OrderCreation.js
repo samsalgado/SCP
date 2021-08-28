@@ -22,7 +22,7 @@ const OrderCreation = ({submitForm}) => {
       const init = async () => {
         const web3 = await getWeb3();
         const accounts = await web3.eth.getAccounts(); 
-        const networkId = await web3.eth.net.getOrderId();
+        const networkId = await web3.eth.net.getId();
         const deployedNetwork = SupplyChainProtocol.networks[networkId];
         const contract = new web3.eth.Contract(
           SupplyChainProtocol.abi,
