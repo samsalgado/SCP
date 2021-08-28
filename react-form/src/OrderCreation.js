@@ -15,13 +15,14 @@ const OrderCreation = ({submitForm}) => {
   const {handleChange, handleSubmit, values} = useForm (
         submitForm,
         validate
+        
     );
 
     useEffect(() => {
       const init = async () => {
         const web3 = await getWeb3();
         const accounts = await web3.eth.getAccounts(); 
-        const networkId = await web3.eth.net.getId();
+        const networkId = await web3.eth.net.getOrderId();
         const deployedNetwork = SupplyChainProtocol.networks[networkId];
         const contract = new web3.eth.Contract(
           SupplyChainProtocol.abi,
@@ -52,7 +53,9 @@ const OrderCreation = ({submitForm}) => {
     useEffect(() => {
       if(isReady) {
         const abi = SupplyChainProtocol.abi
+        console.log(abi);
       }
+      
     }, [accounts, contract, web3])
     
     async function updateOrders() {

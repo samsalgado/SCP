@@ -97,7 +97,7 @@ pragma experimental ABIEncoderV2;
             orderVolume[_id].leadTime_in_days
         );
     } 
-    function getOrderId() public returns (uint256) {
+    function getOrderId() public view returns (uint256) {
         uint256 newOrderVolumeId=orderVolume.length - 1;
         return newOrderVolumeId;
     }
