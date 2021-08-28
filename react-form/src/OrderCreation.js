@@ -24,7 +24,7 @@ const OrderCreation = ({submitForm}) => {
         const accounts = await web3.eth.getAccounts(); 
         const networkId = await web3.eth.net.getId();
         const deployedNetwork = SupplyChainProtocol.networks[networkId];
-        const contract = new web3.eth.Contract(
+        const contract = await new web3.eth.Contract(
           SupplyChainProtocol.abi,
           deployedNetwork && deployedNetwork.address,
           {from: accounts[0], nonce: "4"}
