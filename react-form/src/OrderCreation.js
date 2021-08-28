@@ -4,7 +4,7 @@ import './Order.css';
 import validate from './validate';
 import getWeb3 from './getWeb3';
 import SupplyChainProtocol from './contracts/SupplyChainProtocol.json'
-
+import BlockchainContext from './BlockchainContext';
 const OrderCreation = ({submitForm}) => {
   const [web3, setWeb3] = useState(undefined);
   const [accounts, setAccounts] = useState(undefined);
@@ -91,6 +91,7 @@ const OrderCreation = ({submitForm}) => {
     }
     return (
         <div className='form-content-right'>
+          <BlockchainContext.Provider value={{web3, accounts, contract}}>
         <form onSubmit={e => createOrder(e)} className='form' noValidate>
            <h1>
            Submit Order
@@ -153,7 +154,7 @@ const OrderCreation = ({submitForm}) => {
              Create Product Order
            </button>
          </form>
-         
+         </BlockchainContext.Provider>
        </div>
    
     );
