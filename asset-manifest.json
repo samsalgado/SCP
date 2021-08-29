@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SCP/static/css/main.cb507a4f.chunk.css",
+    "main.js": "/SCP/static/js/main.c56f5b9c.chunk.js",
+    "main.js.map": "/SCP/static/js/main.c56f5b9c.chunk.js.map",
+    "runtime-main.js": "/SCP/static/js/runtime-main.47535d27.js",
+    "runtime-main.js.map": "/SCP/static/js/runtime-main.47535d27.js.map",
+    "static/js/2.766d8727.chunk.js": "/SCP/static/js/2.766d8727.chunk.js",
+    "static/js/2.766d8727.chunk.js.map": "/SCP/static/js/2.766d8727.chunk.js.map",
+    "index.html": "/SCP/index.html",
+    "static/css/main.cb507a4f.chunk.css.map": "/SCP/static/css/main.cb507a4f.chunk.css.map",
+    "static/js/2.766d8727.chunk.js.LICENSE.txt": "/SCP/static/js/2.766d8727.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47535d27.js",
+    "static/js/2.766d8727.chunk.js",
+    "static/css/main.cb507a4f.chunk.css",
+    "static/js/main.c56f5b9c.chunk.js"
+  ]
+}
